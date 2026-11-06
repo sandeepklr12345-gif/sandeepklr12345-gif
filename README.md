@@ -16,9 +16,9 @@ CSE (AI) student at DSATM, Bengaluru · Software Developer Intern at Samp Techno
 
 ## About me
 
-I like taking a messy real-world problem and turning it into something people can actually use: live sensor data from a power plant, rooms scanned with a phone camera, a business's customers and inventory.
+I like taking a messy real-world problem and turning it into something people can actually use: sensor data from a power plant, rooms scanned with a phone camera, a business's customers and inventory.
 
-I work across the stack (Spring Boot, Node.js, FastAPI, React) and bring in machine learning or computer vision when the problem needs it. I try to understand the requirement first, then pick the tools.
+I work across the stack (Spring Boot, Node.js, FastAPI, React) and bring in machine learning, computer vision or LLM agents when the problem needs it. I try to understand the requirement first, then pick the tools.
 
 Beyond code, I've presented research at two international conferences, co-invented a patent filing, and I'm an NCC Cadet.
 
@@ -41,50 +41,33 @@ Beyond code, I've presented research at two international conferences, co-invent
 
 ---
 
-## Featured Projects
+## Projects
 
-### ⚡ AI-SCADA: Predictive Monitoring & Load Forecasting for Thermal Power Plants
-<!-- TODO: add repo link here, e.g. [Repository](https://github.com/sandeepklr12345-gif/REPO-NAME) -->
-
-**Problem:** Plant operators need live visibility into sensor data and early warning of load changes.
-**What I built:** An AI-driven SCADA system with ML load forecasting on 600 MW plant data, a three-level Decision Support Engine, and a React + three.js 3D dashboard.
-
-```
-ESP32 sensors → MQTT → FastAPI → PostgreSQL → ML forecasting + Decision Support → React / three.js 3D dashboard
-```
-
-`Python` `FastAPI` `MQTT` `PostgreSQL` `XGBoost` `ESP32` `React` `three.js` `Docker`
-
-### 🧾 Mini ERP + CRM Operations Portal
-<!-- TODO: add repo link here -->
-
-**What I built:** A full-stack ERP and CRM portal for day-to-day operations.
-
-- 4-tier role-based access control using JWT
-- Customer lifecycle management
-- Real-time inventory tracking with stock alerts
-- Auto-numbered sales challan system
-
-`React` `TypeScript` `Node.js` `Express.js` `Prisma ORM` `PostgreSQL` `JWT` `Zod`
-
-### 😴 Driver Drowsiness Detection System
-<!-- TODO: add repo link here -->
-
-**What I built:** A real-time driver fatigue detector that uses facial feature extraction and eye-state analysis to spot drowsiness patterns and raise instant alerts.
-
-`Python` `OpenCV` `Computer Vision` `Machine Learning`
+| Project | What it does | Tech |
+|---|---|---|
+| [AI-SCADA](https://github.com/sandeepklr12345-gif/ai_scada) | Forecasts power output of a 600 MW thermal unit 2, 10 and 30 minutes ahead, runs anomaly analysis on HAI data, and feeds a three-level decision engine. Data moves over MQTT replay into PostgreSQL and a React plant dashboard. | `Python` `FastAPI` `scikit-learn` `MQTT` `PostgreSQL` `React` `TypeScript` `three.js` |
+| [ClaimLens](https://github.com/sandeepklr12345-gif/claim_lens) | Explainable agent that audits health-insurance claim rejections: finds the matching policy clause, explains the verdict with Integrated Gradients attributions checked for faithfulness, and drafts an appeal. | `Python` `LangGraph` `MCP` `PyTorch` `Transformers` `Captum` `Ollama` `FastAPI` `Streamlit` `Docker` `GitHub Actions` |
+| [CauseTrace](https://github.com/sandeepklr12345-gif/cause-trace) | AI root cause analysis for pharma API manufacturing: reads an incident report, fills the investigation form, proposes evidence-linked causes (5 Whys, fishbone), flags missing evidence and drafts CAPA. A person confirms before anything is saved. | `Python` `FastAPI` `LangGraph` `Groq` `React` `Redux Toolkit` `PostgreSQL` `Docker Compose` |
+| [AI Pharma Complaint Management](https://github.com/sandeepklr12345-gif/AI-Pharma-Complaint-Management) | AI-assisted complaint intake from emails, PDFs or text: structured extraction, summaries, risk assessment, missing-detail checks and duplicate detection. | `Python` `FastAPI` `LangGraph` `Groq` `React` `Redux Toolkit` `SQLAlchemy` `PostgreSQL` `sentence-transformers` |
+| [AI Code Reviewer](https://github.com/sandeepklr12345-gif/AI-code-reviewer) | Reviews pasted code with Gemini and returns structured feedback (bugs, security, style, performance), each with a line number, severity and fix. | `Python` `FastAPI` `Gemini API` `Pydantic` `JavaScript` |
+| [Mini ERP + CRM Portal](https://github.com/sandeepklr12345-gif/Mini-ERP-CRM-Operations-Portal) | Customers, products, real-time inventory with stock alerts, and auto-numbered sales challans, behind four-role access control with JWT. | `React` `TypeScript` `Node.js` `Express` `Prisma` `PostgreSQL` `JWT` `Docker Compose` |
+| [Driver Drowsiness Detection](https://github.com/sandeepklr12345-gif/drowsiness-detection) | Real-time driver fatigue detection from facial features and eye state, with instant alerts. | `Python` `OpenCV` `Computer Vision` `Machine Learning` |
+| [Student Portal](https://github.com/sandeepklr12345-gif/Student-Portal) | Student management system with REST APIs, CRUD, validation and exception handling in a layered Controller, Service, Repository and Entity design. | `Java` `Spring Boot` `JPA` `PostgreSQL` `Maven` |
+| [Docker Mastery](https://github.com/sandeepklr12345-gif/docker-project) | A small FastAPI service containerised with single-stage and multi-stage builds, tested with pytest and built by GitHub Actions. | `Docker` `FastAPI` `pytest` `GitHub Actions` |
+| [Portfolio](https://github.com/sandeepklr12345-gif/Portfolio) | Personal site for my projects, research and skills: dark theme, responsive, animated. | `HTML` `CSS` `JavaScript` |
 
 ---
 
 ## Tech Stack
 
 **Languages:** Java · Python · Kotlin · TypeScript · JavaScript · C · C++
-**Backend:** Spring Boot · JPA/Hibernate · Node.js · Express · FastAPI · REST APIs · MQTT
-**Frontend:** React · HTML · CSS · JSP
-**AI / ML:** Machine Learning · Deep Learning · Computer Vision · CNN · XGBoost · OpenCV
+**Backend:** Spring Boot · JPA/Hibernate · Node.js · Express · FastAPI · Pydantic · SQLAlchemy · REST APIs · JWT · MQTT
+**Frontend:** React · Redux Toolkit · Vite · three.js · Streamlit · HTML · CSS · JSP
+**LLM / Agents:** LangGraph · MCP · Groq · Gemini API · Ollama · RAG (BM25 + dense retrieval) · Structured LLM output
+**AI / ML:** Machine Learning · Deep Learning · Computer Vision · CNN · OpenCV · scikit-learn · PyTorch · Hugging Face Transformers · Explainable AI (Integrated Gradients, SHAP, Captum)
 **Mobile / AR:** Android · Jetpack Compose · ARCore · SceneView
-**Data:** PostgreSQL · SQL · Prisma ORM
-**Tools:** Git · GitHub · Docker · Maven · VS Code · Eclipse
+**Data:** PostgreSQL · SQL · Prisma ORM · pandas · NumPy
+**Tools:** Git · GitHub · GitHub Actions · Docker · Docker Compose · pytest · Ruff · Maven · VS Code · Eclipse
 **Core CS:** DSA · OOP · Operating Systems · Computer Networks
 
 ---
@@ -106,7 +89,7 @@ ESP32 sensors → MQTT → FastAPI → PostgreSQL → ML forecasting + Decision 
 
 - Building and improving my projects, with a focus on clean code and documentation
 - Practising data structures and algorithms on LeetCode
-- Exploring LLM-based agents and API integrations
+- Building LLM agent workflows (LangGraph, MCP) with a human in the loop, and studying explainable AI
 
 ---
 
